@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Для Лизы 💌</title>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffe3e8;--card:#fff8f6;--ink:#4a2433;--pink:#ff6f91;--pink2:#ff9eb5;--soft:#ffd0da;--cat:#ffc9a3;--catd:#f5a97a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2b1620;--card:#3a1f2c;--ink:#ffe9ee;--soft:#55303f}}
+:root[data-theme="dark"]{--bg:#2b1620;--card:#3a1f2c;--ink:#ffe9ee;--soft:#55303f}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:Nunito,system-ui,sans-serif;font-weight:600;display:flex;align-items:center;justify-content:center;overflow-x:hidden}
+.card{width:min(92vw,420px);background:var(--card);border-radius:32px;padding:26px 22px 28px;text-align:center;box-shadow:0 14px 40px rgba(255,111,145,.25);position:relative}
+h1{font-family:Comfortaa,Nunito,sans-serif;font-size:1.65rem;line-height:1.25;margin:10px 0 8px}
+p{margin:6px 0 16px;font-size:1.05rem}
+.page{display:none}.page.on{display:block;animation:in .45s ease}
+@keyframes in{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.cat{width:200px;max-width:70%;height:auto;animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px) rotate(-1.5deg)}}
+.row{display:flex;gap:14px;justify-content:center;align-items:center;min-height:64px}
+button{font:inherit;font-weight:800;border:0;border-radius:999px;padding:14px 28px;font-size:1.1rem;cursor:pointer;transition:transform .15s}
+.yes{background:var(--pink);color:#fff;box-shadow:0 6px 0 #d94a70;transform-origin:center}
+.yes:active{transform:translateY(3px) scale(var(--s,1))}
+.no{background:var(--soft);color:var(--ink)}
+.no.fly{position:fixed;z-index:9;transition:left .25s,top .25s}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 20px}
+.opt{background:var(--soft);color:var(--ink);border-radius:22px;padding:18px 8px;font-size:1.05rem;border:3px solid transparent;display:flex;flex-direction:column;gap:6px;align-items:center}
+.opt span{font-size:2rem}
+.opt.sel{border-color:var(--pink);background:var(--card);box-shadow:0 0 0 3px var(--pink2)}
+button:disabled{opacity:.45;cursor:default}
+.fields{display:flex;flex-direction:column;gap:12px;margin:8px 0 20px}
+input{font:inherit;font-weight:800;font-size:1.1rem;padding:14px;border-radius:18px;border:3px solid var(--pink2);background:var(--card);color:var(--ink);text-align:center;width:100%}
+.big{font-size:3.4rem;margin:0}
+.when{background:var(--soft);border-radius:22px;padding:14px;margin:12px 0}
+.when b{font-family:Comfortaa,Nunito,sans-serif;display:block;font-size:1.15rem;margin-top:4px}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
+.cd div{background:var(--card);border-radius:16px;padding:10px 2px}
+.cd b{font-size:1.6rem;margin:0;display:block;font-family:Comfortaa,Nunito,sans-serif}
+.cd small{font-size:.75rem;opacity:.8}
+.heart{position:fixed;top:-30px;font-size:24px;pointer-events:none;animation:fall linear forwards;z-index:5}
+@keyframes fall{to{transform:translateY(110vh) rotate(40deg);opacity:.2}}
+.eyes{transform-box:fill-box;transform-origin:center;animation:blink 4s infinite}
+@keyframes blink{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)}}
+.tears,.heyes{opacity:0;transition:opacity .3s}
+.cat.sm{width:120px}
+.cmt{min-height:1.6em;margin:-4px 0 14px;font-weight:800;color:var(--pink)}
+.note{margin:20px 0 0;font-family:Comfortaa,Nunito,sans-serif;font-size:1.15rem;line-height:1.5}
+.note small{display:block;margin-top:6px;font-family:Nunito,sans-serif;font-size:.9rem;opacity:.8}
+.send{display:inline-block;margin-top:18px;text-decoration:none;border-radius:999px;padding:14px 28px;font-weight:800;font-size:1.1rem;background:var(--pink);color:#fff;box-shadow:0 6px 0 #d94a70}
+.heart.amb{font-size:16px;opacity:.4;z-index:0}
+@media (prefers-reduced-motion:reduce){.cat,.page.on,.eyes{animation:none}.heart{display:none}}
+</style>
+</head>
+<body>
+<main class="card">
+
+<section class="page on" id="p1">
+  <svg class="cat" viewBox="0 0 200 190" role="img" aria-label="Милый котёнок">
+    <path d="M42 70 L50 14 L92 46 Z" fill="var(--cat)"/><path d="M158 70 L150 14 L108 46 Z" fill="var(--cat)"/>
+    <path d="M54 56 L56 28 L78 46 Z" fill="#ff9eb5"/><path d="M146 56 L144 28 L122 46 Z" fill="#ff9eb5"/>
+    <ellipse cx="100" cy="165" rx="48" ry="26" fill="var(--cat)"/>
+    <ellipse cx="100" cy="98" rx="74" ry="62" fill="var(--cat)"/>
+    <path d="M88 40 q12 14 24 0 M70 46 q4 12 10 14 M130 46 q-4 12 -10 14" stroke="var(--catd)" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <g class="eyes"><ellipse cx="72" cy="98" rx="11" ry="14" fill="#3b2230"/><ellipse cx="128" cy="98" rx="11" ry="14" fill="#3b2230"/>
+    <circle cx="76" cy="92" r="4.5" fill="#fff"/><circle cx="132" cy="92" r="4.5" fill="#fff"/></g>
+    <g class="tears"><path d="M62 114 q-6 11 0 16 q6 -5 0 -16Z" fill="#8fd3ff"/><path d="M138 114 q-6 11 0 16 q6 -5 0 -16Z" fill="#8fd3ff"/></g>
+    <g class="heyes"><text x="72" y="108" font-size="30" text-anchor="middle">💖</text><text x="128" y="108" font-size="30" text-anchor="middle">💖</text></g>
+    <ellipse cx="52" cy="120" rx="11" ry="7" fill="#ff8aa6" opacity=".6"/><ellipse cx="148" cy="120" rx="11" ry="7" fill="#ff8aa6" opacity=".6"/>
+    <path d="M94 114 h12 l-6 8 Z" fill="#ff6f91"/>
+    <path d="M100 122 v6 M100 128 q-9 9 -18 2 M100 128 q9 9 18 2" stroke="#3b2230" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M30 112 h26 M30 126 l24 -4 M170 112 h-26 M170 126 l-24 -4" stroke="#3b2230" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+    <ellipse cx="72" cy="176" rx="17" ry="11" fill="#ffe0cc"/><ellipse cx="128" cy="176" rx="17" ry="11" fill="#ffe0cc"/>
+    <path d="M100 150 c-14 -10 -10 -22 0 -16 c10 -6 14 6 0 16Z" fill="#ff6f91"/>
+  </svg>
+  <h1>Лиза, пойдёшь со мной на свидание?</h1>
+  <p id="hint">Только честно 🐾</p>
+  <div class="row" id="row">
+    <button class="yes" id="yes">Да 💖</button>
+    <button class="no" id="no">Нет</button>
+  </div>
+</section>
+
+<section class="page" id="p2">
+  <div id="cat2"></div>
+  <h1>Варианты</h1>
+  <p>Выбери, чем займёмся</p>
+  <div class="opts" id="opts">
+    <button class="opt" data-v="Кино" data-e="🎬"><span>🎬</span>Кино</button>
+    <button class="opt" data-v="Кофе" data-e="☕"><span>☕</span>Кофе</button>
+    <button class="opt" data-v="Ужин" data-e="🍝"><span>🍝</span>Ужин</button>
+    <button class="opt" data-v="Прогулка с Кнопой" data-e="🐕"><span>🐕</span>Прогулка с Кнопой</button>
+  </div>
+  <p class="cmt" id="cmt"></p>
+  <button class="yes" id="n2" disabled>Дальше</button>
+</section>
+
+<section class="page" id="p3">
+  <h1>Дата и время</h1>
+  <p>Когда тебе удобно?</p>
+  <div class="fields">
+    <input type="date" id="d" aria-label="Дата">
+    <input type="time" id="t" value="19:00" aria-label="Время">
+  </div>
+  <button class="yes" id="n3">Готово</button>
+</section>
+
+<section class="page" id="p4">
+  <div id="cat4"></div>
+  <h1>Ура, Лиза, это свидание!</h1>
+  <div class="when"><span id="r-e"></span><b id="r-a"></b><b id="r-d"></b></div>
+  <p>До встречи осталось</p>
+  <div class="cd"><div><b id="c-d">0</b><small>дней</small></div><div><b id="c-h">0</b><small>часов</small></div><div><b id="c-m">0</b><small>минут</small></div><div><b id="c-s">0</b><small>секунд</small></div></div>
+  <p class="note">Я буду ждать этого дня 💗<small>Нажми кнопку, и ответ придёт мне в Telegram 📲</small></p>
+  <a class="send" id="send" target="_blank" rel="noopener">Отправить ответ 💌</a>
+</section>
+
+</main>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+function show(n){document.querySelectorAll('.page').forEach(function(p){p.classList.remove('on')});$(n).classList.add('on')}
+function hearts(n){for(var i=0;i<n;i++){var h=document.createElement('div');h.className='heart';h.textContent=['💖','💗','💕','🌸'][i%4];h.style.left=Math.random()*100+'vw';h.style.animationDuration=(2.5+Math.random()*2.5)+'s';h.style.animationDelay=Math.random()*1.2+'s';document.body.appendChild(h);setTimeout(function(x){x.remove()},6500,h)}}
+
+/* Страница 1: кнопка «Нет» убегает */
+var no=$('no'),yes=$('yes'),tries=0,scale=1;
+var lines=['Ну пожалуйста 🥺','Котёнок грустит…','Кнопка стесняется 🙈','Не поймаешь!','Может, всё-таки «Да»?','Котёнок уже плачет 😿'];
+function flee(e){
+  if(e){e.preventDefault()}
+  tries++;scale=Math.min(scale+.12,2);yes.style.setProperty('--s',scale);yes.style.transform='scale('+scale+')';
+  $('hint').textContent=lines[tries%lines.length];
+  if(tries>=3){document.querySelector('#p1 .tears').style.opacity=1}
+  var w=no.offsetWidth,h=no.offsetHeight,pad=12;
+  var x=pad+Math.random()*(window.innerWidth-w-2*pad),y=pad+Math.random()*(window.innerHeight-h-2*pad);
+  no.classList.add('fly');no.style.left=x+'px';no.style.top=y+'px';
+}
+['pointerenter','touchstart','pointerdown','click','focus'].forEach(function(ev){no.addEventListener(ev,flee,{passive:false})});
+yes.addEventListener('click',function(){
+  var e=document.querySelector('#p1 .eyes'),h=document.querySelector('#p1 .heyes'),t=document.querySelector('#p1 .tears');
+  e.style.opacity=0;h.style.opacity=1;t.style.opacity=0;$('hint').textContent='Ура!! 💖';hearts(26);
+  setTimeout(function(){show('p2')},1000)});
+
+/* Котёнок на других страницах */
+var base=document.querySelector('#p1 .cat');
+['cat2','cat4'].forEach(function(id){var c=base.cloneNode(true);c.classList.add('sm');$(id).appendChild(c);
+  if(id==='cat4'){c.querySelector('.eyes').style.opacity=0;c.querySelector('.heyes').style.opacity=1}});
+/* Фоновые сердечки */
+setInterval(function(){var h=document.createElement('div');h.className='heart amb';h.textContent=['💗','🌸','✨'][Math.floor(Math.random()*3)];h.style.left=Math.random()*100+'vw';h.style.animationDuration='9s';document.body.appendChild(h);setTimeout(function(x){x.remove()},9500,h)},1800);
+var cmts={'Кино':'Тогда я за попкорн 🍿','Кофе':'Уютно, как котёнок на пледе ☕','Ужин':'Отличный выбор 🍝','Прогулка с Кнопой':'Кнопа уже виляет хвостом 🐕'};
+/* Страница 2: выбор */
+var choice=null,emoji='';
+document.querySelectorAll('.opt').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.opt').forEach(function(o){o.classList.remove('sel')});
+  b.classList.add('sel');choice=b.dataset.v;emoji=b.dataset.e;$('cmt').textContent=cmts[choice];$('n2').disabled=false})});
+$('n2').addEventListener('click',function(){show('p3')});
+
+/* Страница 3: дата и время */
+var tm=new Date();tm.setDate(tm.getDate()+1);
+function iso(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2)}
+$('d').value=iso(tm);$('d').min=iso(new Date());
+var target=null,timer=null;
+$('n3').addEventListener('click',function(){
+  var dv=$('d').value,tv=$('t').value||'19:00';
+  if(!dv){$('d').focus();return}
+  var p=dv.split('-'),q=tv.split(':');
+  target=new Date(+p[0],+p[1]-1,+p[2],+q[0],+q[1]);
+  $('r-e').textContent=emoji;$('r-a').textContent=choice;
+  $('r-d').textContent=target.toLocaleDateString('ru-RU',{weekday:'long',day:'numeric',month:'long'})+', '+tv;
+  $('send').href='https://t.me/Cyanogen01?text='+encodeURIComponent('Я согласна! 💖 '+choice+', '+$('r-d').textContent);
+  show('p4');hearts(40);tick();timer=setInterval(tick,1000)});
+function tick(){
+  var s=Math.max(0,Math.floor((target-new Date())/1000));
+  $('c-d').textContent=Math.floor(s/86400);$('c-h').textContent=Math.floor(s%86400/3600);
+  $('c-m').textContent=Math.floor(s%3600/60);$('c-s').textContent=s%60;
+}
+})();
+</script>
+</body>
+</html>
